@@ -1,0 +1,16 @@
+# Archivos de compilación
+[Bb]in/
+[Oo]bj/
+
+# Configuración de Visual Studio
+.vs/
+
+# Configuración local
+*.user
+*.suo
+
+# Archivos temporales
+*.log
+
+# Archivos de publicación
+publish/
