@@ -1,0 +1,99 @@
+{
+  "info": {
+    "_postman_id": "238288a0-61d2-4b2b-beac-ee51776e8292",
+    "name": "Gestion Biblioteca API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52192273",
+    "_collection_link": "https://go.postman.co/collection/52192273-238288a0-61d2-4b2b-beac-ee51776e8292?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Libros",
+      "item": [
+        {
+          "name": "Consultar todos los libros",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{UrlBase}}/libros",
+              "host": [
+                "{{UrlBase}}"
+              ],
+              "path": [
+                "libros"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Consultar libro por Id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{UrlBase}}/libros/1",
+              "host": [
+                "{{UrlBase}}"
+              ],
+              "path": [
+                "libros",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear libro",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"titulo\": \"Programación en C# desde cero\",\r\n    \"autor\": \"Juan Díaz\",\r\n    \"disponible\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{UrlBase}}/libros",
+              "host": [
+                "{{UrlBase}}"
+              ],
+              "path": [
+                "libros"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Categorias",
+      "item": [
+        {
+          "name": "Consultar todas las categorias",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{UrlBase}}/categorias",
+              "host": [
+                "{{UrlBase}}"
+              ],
+              "path": [
+                "categorias"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
